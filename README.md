@@ -1,5 +1,6 @@
 # gender
-discover genre name
+
+Discover Genre Name
 
 pour lancer le projet il suffit, de lancer la commande npm run populate.
 cela va lancer le script node qui va remplir dans un premier temps la database et la créer aux besoin.
@@ -12,14 +13,16 @@ le programme fonctionne surtout au besoin de session, je set une session à la c
 
 j'ai utilisé pug pour le template de mes fichier html.
 
-La base de donnée utilisé est mysql et j ai utilisé "mysql-await" pour effectuer les requete de mon application
+La base de donnée utilisé est mysql et j ai utilisé "mysql-await" pour effectuer les requêtes de mon application
 
-pour determiner le genre des nom j'ai utilisé "gender-detection" qui repond unknow, male, female or unisex.
+pour déterminer le genre des nom, j'ai utilisé "gender-detection" qui repond unknown, male, female or unisex.
 
-pour prposer le nom a deviner au joueur je boucle tant que le nom et egale a unknow.
+pour proposer le nom a deviner au joueur je fais une requete sql randome qui va me donner un nom aléatoire et je boucle tant que le nom est égale a unknown.
 
-PISET d'amelioration
-enlever le nom unknow des le remplissage de la database.
 
-faire un set de resultat afin de determinez si il ne suiffit pas de cliquer sur un même boutton pour gagner rapidement.
+Piste d'amelioration
+
+enlever les noms unknown des le remplissage de la database.
+
+faire un set de resultat afin de determinez si il ne suiffit pas de cliquer sur un même bouton pour gagner rapidement, afin d'amélioré la liste de choix proposé.
  
