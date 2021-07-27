@@ -1,0 +1,21 @@
+{
+  "name": "gender",
+  "version": "1.0.0",
+  "description": "game gender name ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express-session": "^1.17.4",
+    "detect-gender": "^1.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "gender-detection": "^0.1.0",
+    "mysql": "^2.18.1",
+    "mysql-await": "^2.1.8",
+    "pug": "^3.0.2"
+  }
+}
