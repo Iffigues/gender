@@ -35,7 +35,7 @@ app.get('/res/:id', (req, res) => {
 		if (g == "unisex") {
 			req.session.point += 1;
 		} else if (g == "unknown") {
-			
+			req.session.unknow = 1;			
 		} else if (g == "male" && gendername == "m" ) {
 			req.session.point += 1;
 		} else if ( (g == "female") && (gendername == "w")) {
@@ -48,7 +48,12 @@ app.get('/res/:id', (req, res) => {
 });
 
 app.get('/', async  (req, res) => {
- req.session.name = await logger.Get_rand(); 
+ let name = await logger.Get_rand();
+ 
+while (gender.detect(name) == "unknown") {
+	name = await logger.Get_rand();
+ }	
+ req.session.name = name; 
  if (typeof req.session.point === "undefined") {
 	req.session.point = 10;
   }

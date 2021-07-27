@@ -4,6 +4,8 @@
   "description": "game gender name ",
   "main": "index.js",
   "scripts": {
+    "populate": "node populate.js ./data/names.txt",
+    "serve": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
